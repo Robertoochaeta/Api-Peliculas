@@ -1,6 +1,32 @@
 import React from 'react'
 
 const Peliculas=()=>{
+    const peliculas=[
+        {
+            titulo: 'Terminator',
+            genero: 'Acción',
+            director: 'James Cameron',
+            anio: '1996'
+        
+        },
+        {
+            titulo: 'Batman the Dark Knight',
+            genero: 'Super Heroes',
+            director: 'Chrisfer Nolan',
+            anio: '2008'
+        
+        },
+        {
+            titulo: 'Avengers',
+            genero: 'Super Heroes',
+            director: 'Roberto Ochaeta',
+            anio: '2012'
+        
+        },
+
+    ]
+
+    
     return(
         <>
         <div>
@@ -8,15 +34,21 @@ const Peliculas=()=>{
             <h2>Peliculas</h2>
         </div>
 
-        <div>
-            <p>Peliculas</p>
-        </div>
-        <table>
-            <ul>
-                <li>La mascara</li>
-                <li>La Masacre de texas</li>
-            </ul>
-        </table>
+     
+     <div>Peliculas contenido</div>
+            
+         {peliculas.map((peliculas)=>(
+             <>
+             <div>{peliculas.titulo}</div>
+            <div>{peliculas.genero}</div>
+            <div>{peliculas.director}</div>
+            <div>{peliculas.anio}</div>
+            <hr/>
+      </>
+      
+         ))}
+       
+    
         </>
         
     );
