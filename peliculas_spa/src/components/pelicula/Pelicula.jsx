@@ -1,56 +1,15 @@
 import React from 'react'
 
-const Peliculas=()=>{
-    const peliculas=[
-        {
-            titulo: 'Terminator',
-            genero: 'Acción',
-            director: 'James Cameron',
-            anio: '1996'
-        
-        },
-        {
-            titulo: 'Batman the Dark Knight',
-            genero: 'Super Heroes',
-            director: 'Chrisfer Nolan',
-            anio: '2008'
-        
-        },
-        {
-            titulo: 'Avengers',
-            genero: 'Super Heroes',
-            director: 'Roberto Ochaeta',
-            anio: '2012'
-        
-        },
-
-    ]
-
-    
+const pelicula=(props)=>{
     return(
         <>
-        <div>
-
-            <h2>Peliculas</h2>
-        </div>
-
-     
-     <div>Peliculas contenido</div>
-            
-         {peliculas.map((peliculas)=>(
-             <>
-             <div>{peliculas.titulo}</div>
-            <div>{peliculas.genero}</div>
-            <div>{peliculas.director}</div>
-            <div>{peliculas.anio}</div>
-            <hr/>
-      </>
-      
-         ))}
-       
-    
-        </>
         
-    );
+          <div>{props.datos.titulo} </div> 
+        <div>{props.datos.genero}</div>
+        <div>{props.datos.director}</div>
+        <div>{props.datos.anio}</div>
+        <hr></hr>
+        </>
+    )
 }
-export default Peliculas;
+export default pelicula;
