@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const pelicula=({datos})=>{
+  const [botones,setbotones]=useState("")
     return(
         <>
         
@@ -9,6 +10,15 @@ const pelicula=({datos})=>{
         <div>{datos.director}</div>
         <div>{datos.anio}</div>
         <hr></hr>
+        <div>
+          <button disabled="" onClick={()=>{
+            alert("Haz comprado esta pelicula")}}>
+              Comprar
+              </button>
+          <button disabled="" onClick={()=>{
+
+          }}>Agregar al carrito</button>
+        </div>
         </>
     )
 }
