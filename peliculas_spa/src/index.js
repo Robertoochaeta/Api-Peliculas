@@ -15,7 +15,7 @@ ReactDOM.render(
     <Menu />
     <Body />
 
-    <Footer />
+   
 </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
