@@ -1,13 +1,13 @@
 import React from 'react'
 
-const pelicula=(props)=>{
+const pelicula=({datos})=>{
     return(
         <>
         
-          <div>{props.datos.titulo} </div> 
-        <div>{props.datos.genero}</div>
-        <div>{props.datos.director}</div>
-        <div>{props.datos.anio}</div>
+          <div>{datos.titulo} </div> 
+        <div>{datos.genero}</div>
+        <div>{datos.director}</div>
+        <div>{datos.anio}</div>
         <hr></hr>
         </>
     )
