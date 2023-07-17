@@ -12,7 +12,7 @@ const Body = () => {
        <Route path="/peliculas" exact component={Peliculas}></Route>
        <Route path="/favoritos" exact component={Favorito}></Route>
        <Route path="/carrito" exact component={Carrito}></Route>
-       <Route path="/destacada" exact component={destacada}></Route>
+     <Route path="/destacada" exact component={destacada}></Route>
       <Route path='/buscar' exact component={Buscar}></Route> 
       
      </div>

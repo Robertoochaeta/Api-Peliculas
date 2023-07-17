@@ -1,5 +1,5 @@
 import React from 'react'
-import Pelicula from './pelicula';
+import Pelicula from './pelicula.jsx';
 const Peliculas=()=>{
     const peliculas=[
         {
@@ -23,6 +23,13 @@ const Peliculas=()=>{
             anio: '2012'
         
         },
+        {
+            titulo: 'Thor',
+            genero: 'Super Heroes',
+            director: 'Veans Ruso',
+            anio: '2022'
+        
+        },
 
     ]
 
@@ -38,9 +45,10 @@ const Peliculas=()=>{
      <div>Peliculas contenido</div>
             
          {peliculas.map((pelicula)=>(
-             
-            <Pelicula datos={pelicula}></Pelicula>
-    
+            
+
+            <Pelicula datos={pelicula} key={pelicula.idPelicula}></Pelicula>
+
       
          ))}
        

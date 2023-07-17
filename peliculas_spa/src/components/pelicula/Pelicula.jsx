@@ -1,25 +1,30 @@
 import React, {useState} from 'react'
 
-const pelicula=({datos})=>{
-  const [botones,setbotones]=useState("")
+const Pelicula=({datos})=>{
+  const [botones,setBotones]= useState("");
     return(
         <>
-        
+      
           <div>{datos.titulo} </div> 
         <div>{datos.genero}</div>
         <div>{datos.director}</div>
         <div>{datos.anio}</div>
         <hr></hr>
         <div>
-          <button disabled="" onClick={()=>{
+          <button
+           disabled={botones}
+          onClick={()=>{
+            setBotones("disabled");
             alert("Haz comprado esta pelicula")}}>
               Comprar
               </button>
-          <button disabled="" onClick={()=>{
 
+          <button disabled={botones}
+          onClick={()=>{
+            setBotones("disabled");
           }}>Agregar al carrito</button>
         </div>
         </>
     )
 }
-export default pelicula;
+export default Pelicula;
